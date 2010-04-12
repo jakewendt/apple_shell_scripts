@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#	what's the "activate" for
+
+cat << EOF | osascript
+tell application "iTunes"
+	activate
+	set stored_Vol to (get sound volume)
+	set sound volume to 20
+	display dialog "Click OK to restore volume." giving up after 300
+	copy stored_Vol to sound volume
+end tell
+EOF
+
+#	tell application "iTunes"
+#		if (player state is paused) or (player state is stopped) then
+#			play
+#		else
+#			pause
+#		end if
+#	end tell
+

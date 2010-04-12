@@ -1,0 +1,16 @@
+#!/bin/sh
+
+cat << EOF | osascript
+tell application "iTunes"
+	playpause
+end tell
+EOF
+
+#	tell application "iTunes"
+#		if (player state is paused) or (player state is stopped) then
+#			play
+#		else
+#			pause
+#		end if
+#	end tell
+

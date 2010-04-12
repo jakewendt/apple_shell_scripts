@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Apple Shell Scripts</title>
+<link rel="stylesheet" type="text/css" href="http://jakewendt.com/css/default.css" />
+<link rel="stylesheet" type="text/css" href="http://jakewendt.com/css/center.css" />
+</head>
+<body>
+
+<div id="table">
+<div id="cell">
+<div id="wrapper">
+<div id="content">
+<!--
+-->
+
+<h1>Apple Shell Scripts or ASS's</h1>
+<hr />
+
+<p>
+Apple Shell Scripts are super simple self contained commands that do what you ask.  I have chosen to write these in "sh" which is one of several possible command line "languages" on the Mac OS X.  These could potentially be aliases I suppose, but I've chosen to use them in file form.  These scripts use Applescript's command line command "osascript" for execution.  I don't know much about Applescripting.  I just generally never used it, but I found that there were times when what I've needed would need to be via Applescript.
+</p>
+
+<p>I watch podcasts and TV programs on my iMac and I usually sit in my LazyBoy with my powerbook surfing the web or writing some email.  Multitasking.  The phone rings.  Now since I can't buy the hardware and software to install Front Row on my 2 year old ancient iMac, I have to get up and hit the space bar (rather than throw stuff at my keyboard in hopes of actually hitting it) or click pause or Mute.  I suppose I could use a bluetooth keyboard or spend a couple hundred bucks on Apple Remote Desktop, but why?
+</p>
+
+<p>
+Well now I don't and neither do you.  Simply enable Remote Login from the System Preferences -&gt; Internet &amp; Network -&gt; Sharing menu on your target computer, login via ssh and run iTunes.ToggleMute.  Now sure, these scripts have their downside.  They do take a second to compile, but this could be avoided by actually writing the script in the Script Editor, compiling and then saving that script in the appropriate format.  As I said, I'm not much of an Applescript'r.
+</p>
+
+<p>
+In addition to being a fruitful little utility, you could have a wee bit of fun with all of the computers that you have access.  Play your favorite music instead of whatever it is that is currently being played.
+</p>
+
+
+<p>
+Built-in Apple functions (all very obvious functionality) 
+</p>
+
+<ul>
+	<li>open myDatafile (open's myDatafile with the default viewer)</li>
+	<li>exec myExec     (run's myExec (Textedit, Terminal, ...)</li>
+	<li>osascript Applescript.scpt (run's Applescript.scpt)</li>
+</ul>
+
+
+<p>
+Using Applescripts instead of open or exec will probably make it easier and you won't have to know the locations of the actual execs.
+</p>
+
+<p>
+Without question, a very special thanks goes out to http://www.dougscripts.com Many, if not most, of the actual iTunes scripts came from him/them.  If you find these useful, donate some cash to him, not me.
+</p>
+
+<p>
+Now, without further ado ...
+</p>
+
+<ul>
+	<li><a href="iTunes.Pause" target="new">iTunes.Pause</a></li>
+	<li><a href="iTunes.Play" target="new">iTunes.Play</a></li>
+	<li><a href="iTunes.ToggleMute" target="new">iTunes.ToggleMute</a></li>
+	<li><a href="iTunes.TogglePlay" target="new">iTunes.TogglePlay</a></li>
+	<li><a href="iTunes.Volume" target="new">iTunes.Volume</a></li>
+	<li><a href="iTunes.VolumeDown" target="new">iTunes.VolumeDown</a></li>
+	<li><a href="iTunes.VolumeUp" target="new">iTunes.VolumeUp</a></li>
+	<li><a href="System.Volume" target="new">System.Volume</a></li>
+</ul>
+
+<p>
+Please note, that at this point these scripts are just demos.  Please view the script to see if you need to give it a parameter like iTunes.Volume.  I would like to create many more and make these more useful, but at this point in my life I have more pressing issues.  There also seems to be a problem with the volume adjustment.  The setting seems to be progressive.
+</p>
+
+<p>
+NOTE: After downloading these script(s), you may need to "chmod +x SCRIPTNAME" if it is not already set to executable.
+</p>
+
+</div>	<!-- wrapper -->
+</div>	<!-- content -->
+</div>	<!-- cell -->
+</div>	<!-- table -->
+
+</body>
+</html>

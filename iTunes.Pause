@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cat << EOF | osascript
+tell application "iTunes"
+	pause
+end tell
+EOF
+

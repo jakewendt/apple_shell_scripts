@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#	add parameters that would accept volume, playlist, ...
+
+#echo $1
+
+#	can I say set playlist = $1 or get playlist
+
+cat << EOF | osascript
+tell application "iTunes"
+	play
+end tell
+EOF
+

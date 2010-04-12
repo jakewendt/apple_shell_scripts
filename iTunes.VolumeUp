@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#	what's the "activate" for
+
+cat << EOF | osascript
+tell application "iTunes"
+	activate
+	set sound volume to (get sound volume)+10
+end tell
+EOF
+
+#	tell application "iTunes"
+#		if (player state is paused) or (player state is stopped) then
+#			play
+#		else
+#			pause
+#		end if
+#	end tell
+

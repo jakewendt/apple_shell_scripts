@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cat << EOF | osascript
+tell application "iTunes"
+	set mute to not (get mute)
+end tel
+EOF
+
